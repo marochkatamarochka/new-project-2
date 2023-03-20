@@ -1,6 +1,6 @@
 .hero {
     background: url(../img/bg1.png)  center / cover no-repeat;
-padding: 28px 65px;
+padding: rem(28px) 0 rem(65px);
 position: relative;
 
 &::before {
@@ -15,6 +15,15 @@ position: relative;
 }
 .hero__title-section {
     width: 51%;
+
+    @include tablets{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .hero__container {
     display: flex;
@@ -26,15 +35,29 @@ position: relative;
 }
 .hero__main-title {
     font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    margin-bottom: 17px;
+    font-size: rem(48px);
+    line-height: rem(58px);
+    margin-bottom: rem(17px);
     color: #fff;
     text-transform: uppercase;
+
+    @include phones {
+        display: flex;
+        text-align: center;
+        font-size: rem(40px);
+    }
 }
 .hero__title-desc {
-    font-size: 21px;
-    line-height: 25px;
-    margin-bottom: 40px;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(40px);
     color: #fff;
+
+    @include tablets{
+        padding: 0 25%;
+
+    }
+    @include phones {
+        padding: 0 10%;
+    }
 }

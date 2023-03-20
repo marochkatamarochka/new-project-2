@@ -8,7 +8,7 @@
             border-radius: 0;
 
             &::before {
-                background: url(/img/ok.png) center center no-repeat;
+                background: url(../img/ok.png) center center no-repeat;
             }
         }
     }
@@ -24,17 +24,17 @@
 }
 .radio__visible {
     content: "";
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     position: relative;
     border-radius: 50%;
     background: #fff;
-    margin-right: 10px;
+    margin-right: rem(10px);
 
     &::before {
         content: '';
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         background: #FEDB3F;
         border-radius: 50%;
         position: absolute;

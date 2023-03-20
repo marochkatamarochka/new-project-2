@@ -2,10 +2,14 @@
     text-align: center;
 }
 .headline__title {
-    margin-bottom: 17px;
+    margin-bottom: rem(17px);
 }
 .headline__subtitle {
     color: #666;
     padding: 0 27%;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
+
+    @include phones {
+    padding: 0 5%;
+    }
 }

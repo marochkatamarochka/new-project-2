@@ -2,10 +2,16 @@ $containerWidth: 940px;
 $baseFontSize: 18px; 
 $z-fixed-menu: 100;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
 @import "normalize";
 
 @import "components/layout";
+@import "components/media";
 
 //components
 @import "components/hero";
@@ -24,3 +30,5 @@ $z-fixed-menu: 100;
 @import "components/form";
 @import "components/radio";
 @import "components/fixed-menu";
+@import "components/hamburger";
+@import "components/footer";
